@@ -1,0 +1,1163 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>action creators · React Redux Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../recipes/README.md" />
+    
+    
+    <link rel="prev" href="combineForms.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../guides/README.md">
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../guides/quickstart.html">
+            
+                <a href="../guides/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../guides/models.html">
+            
+                <a href="../guides/models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../guides/validation.html">
+            
+                <a href="../guides/validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../guides/tracking.html">
+            
+                <a href="../guides/tracking.html">
+            
+                    
+                    Tracking Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../guides/custom-controls.html">
+            
+                <a href="../guides/custom-controls.html">
+            
+                    
+                    Custom Controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../guides/compare-redux-form.html">
+            
+                <a href="../guides/compare-redux-form.html">
+            
+                    
+                    Compare to Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="README.md">
+            
+                <span>
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Control.html">
+            
+                <a href="Control.html">
+            
+                    
+                    Control component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Field.html">
+            
+                <a href="Field.html">
+            
+                    
+                    Field component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="modelReducer.html">
+            
+                <a href="modelReducer.html">
+            
+                    
+                    modelReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="formReducer.html">
+            
+                <a href="formReducer.html">
+            
+                    
+                    formReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="combineForms.html">
+            
+                <a href="combineForms.html">
+            
+                    
+                    combineForms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="actions.html">
+            
+                <a href="actions.html">
+            
+                    
+                    action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../recipes/README.md">
+            
+                <span>
+            
+                    
+                    Recipes and Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../recipes/quickstart.html">
+            
+                <a href="../recipes/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >action creators</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="action-creators">Action Creators</h1><ul><li><p><a href="#model-action-creators">Model Action Creators</a></p><ul><li><a href="#actions-change"><code>actions.change()</code></a>
+</li>
+<li><a href="#actions-reset"><code>actions.reset()</code></a>
+</li>
+<li><a href="#actions-merge"><code>actions.merge()</code></a>
+</li>
+<li><a href="#actions-xor"><code>actions.xor()</code></a>
+</li>
+<li><a href="#actions-toggle"><code>actions.toggle()</code></a>
+</li>
+<li><a href="#actions-filter"><code>actions.filter()</code></a>
+</li>
+<li><a href="#actions-map"><code>actions.map()</code></a>
+</li>
+<li><a href="#actions-remove"><code>actions.remove()</code></a>
+</li>
+<li><a href="#actions-move"><code>actions.move()</code></a>
+</li>
+<li><a href="#actions-load"><code>actions.load()</code></a>
+</li>
+<li><a href="#actions-omit"><code>actions.load()</code></a>
+</li></ul>
+</li>
+<li><p><a href="#field-action-creators">Field Action Creators</a></p><ul><li><a href="#actions-focus"><code>actions.focus()</code></a>
+</li>
+<li><a href="#actions-blur"><code>actions.blur()</code></a>
+</li>
+<li><a href="#actions-setPristine"><code>actions.setPristine()</code></a>
+</li>
+<li><a href="#actions-setDirty"><code>actions.setDirty()</code></a>
+</li>
+<li><a href="#actions-setPending"><code>actions.setPending()</code></a>
+</li>
+<li><a href="#actions-setTouched"><code>actions.setTouched()</code></a>
+</li>
+<li><a href="#actions-setUntouched"><code>actions.setUntouched()</code></a>
+</li>
+<li><a href="#actions-submit"><code>actions.submit()</code></a>
+</li>
+<li><a href="#actions-submitFields"><code>actions.submitFields()</code></a>
+</li>
+<li><a href="#actions-setSubmitted"><code>actions.setSubmitted()</code></a>
+</li>
+<li><a href="#actions-setSubmitFailed"><code>actions.setSubmitFailed()</code></a>
+</li>
+<li><a href="#actions-setInitial"><code>actions.setInitial()</code></a>
+</li></ul>
+</li>
+<li><p><a href="#validation-action-creators">Validation Action Creators</a></p><ul><li><a href="#actions-setValidity"><code>actions.setValidity()</code></a>
+</li>
+<li><a href="#actions-setFieldsValidity"><code>actions.setFieldsValidity()</code></a>
+</li>
+<li><a href="#actions-validate"><code>actions.validate()</code></a>
+</li>
+<li><a href="#actions-validate"><code>actions.validateFields()</code></a>
+</li>
+<li><a href="#actions-asyncSetValidity"><code>actions.asyncSetValidity()</code></a>
+</li>
+<li><a href="#actions-setErrors"><code>actions.setErrors()</code></a>
+</li>
+<li><a href="#actions-setFieldsErrors"><code>actions.setFieldsErrors()</code></a>
+</li>
+<li><a href="#actions-validateErrors"><code>actions.validateErrors()</code></a>
+</li>
+<li><a href="#actions-validateFieldsErrors"><code>actions.validateFieldsErrors()</code></a>
+</li>
+<li><a href="#actions-resetValidity"><code>actions.resetValidity()</code></a>
+</li></ul>
+</li></ul>
+<h1 id="model-action-creators">Model Action Creators</h1><p>All model and field action creators can be imported via <code>import { actions } from &apos;react-redux-form&apos;</code>. The action thunk creators require <a href="https://github.com/gaearon/redux-thunk" target="_blank">redux-thunk middleware</a> to work, as they use thunks to get the current model state.</p><p>Also, all action creators are <strong>trackable</strong>, which means that the <code>model</code> argument can be a function, such as <a href="TODO"><code>track()</code></a>, that returns a string model path given the store&apos;s state. For example:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> track<span class="token punctuation">,</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// this will dispatch a change() action for the</span>
+<span class="token comment" spellcheck="true">// user&apos;s goat with id === 123</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span>
+  <span class="token function">track</span><span class="token punctuation">(</span><span class="token string">&apos;user.goats[].color&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>id<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;black&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="actions-change"></h2>
+
+
+
+<h2 id="actionschangemodel-value-options"><code>actions.change(model, value, [options])</code></h2><p>Returns an action that, when handled by a <code>modelReducer</code>, changes the value of the <code>model</code> to the <code>value</code>.</p><p>When the change action is handled by a <a href="TODO"><code>formReducer</code></a>, the field model&apos;s <code>.dirty</code> state is set to <code>true</code> and its corresponding <code>.pristine</code> state is set to <code>false</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose value will be changed
+</li>
+<li><code>value</code> <em>(any)</em>: the value the model will be changed to
+</li>
+<li><code>options</code> <em>(object)</em>: an object containing options for the action creator:
+</li></ul>
+<h3 id="options">Options</h3><ul><li><code>.silent</code> <em>(boolean)</em>: if <code>true</code>, the <code>CHANGE</code> action will not trigger change-related operations in the form reducer, such as setting <code>.pristine = false</code>. Default: <code>false</code>
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span>
+  modelReducer<span class="token punctuation">,</span>
+  actions
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> userReducer <span class="token operator">=</span> <span class="token function">modelReducer</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> initialState <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">userReducer</span><span class="token punctuation">(</span>initialState<span class="token punctuation">,</span> actions<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span><span class="token string">&apos;user.name&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Billy&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; { name: &apos;Billy&apos;, age: 0 }</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>The <code>model</code> path can be as deep as you want. E.g. <code>actions.change(&apos;user.phones[0].type&apos;, &apos;home&apos;)</code>
+</li></ul>
+<h2 id="actions-reset"></h2>
+
+
+
+<h2 id="actionsresetmodel"><code>actions.reset(model)</code></h2><p>Returns an action that, when handled by a <code>modelReducer</code>, changes the value of the respective model to its initial value.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose value will be reset to its initial value.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span>
+  modelReducer<span class="token punctuation">,</span>
+  actions
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> initialState <span class="token operator">=</span> <span class="token punctuation">{</span> count<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> counterReducer <span class="token operator">=</span> <span class="token function">modelReducer</span><span class="token punctuation">(</span><span class="token string">&apos;counter&apos;</span><span class="token punctuation">,</span> initialState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> nextState <span class="token operator">=</span> <span class="token function">counterReducer</span><span class="token punctuation">(</span>initialState<span class="token punctuation">,</span>
+  actions<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span><span class="token string">&apos;counter.count&apos;</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; { count: 42 }</span>
+
+<span class="token keyword">const</span> resetState <span class="token operator">=</span> <span class="token function">counterReducer</span><span class="token punctuation">(</span>nextState<span class="token punctuation">,</span>
+  actions<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token string">&apos;counter.count&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; { count: 10 }</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>This action will reset both the model value in the model reducer, <em>and</em> the model field state in the form reducer (if it exists).
+</li>
+<li>To reset just the field state (in the form reducer), use <code>actions.setInitial(model)</code>.
+</li></ul>
+<h2 id="actions-merge"></h2>
+
+
+
+<h2 id="actionsmergemodel-values"><code>actions.merge(model, values)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that merges the <code>values</code> into the value specified by the <code>model</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model to be merged with <code>values</code>.
+</li>
+<li><code>values</code> <em>(Object | Object[] | Objects...)</em>: the values that will be merged into the object represented by the <code>model</code>.
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>Use this action to update multiple and/or deep properties into a model, if the model represents an object.
+</li>
+<li>This uses <code>icepick.merge(modelValue, values)</code> internally.
+</li></ul>
+<h2 id="actions-xor"></h2>
+
+
+
+<h2 id="actionsxormodel-item"><code>actions.xor(model, item)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that applies an &quot;xor&quot; operation to the array represented by the <code>model</code>; that is, it &quot;toggles&quot; an item in an array.</p><p>If the model value contains <code>item</code>, it will be removed. If the model value doesn&apos;t contain <code>item</code>, it will be added.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the array model where the <code>xor</code> will be applied.
+</li>
+<li><code>item</code> <em>(any)</em>: the item to be &quot;toggled&quot; in the model value.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// assume user.numbers = [1, 2, 3, 4, 5]</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">xor</span><span class="token punctuation">(</span><span class="token string">&apos;user.numbers&apos;</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// user.numbers = [1, 2, 4, 5]</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">xor</span><span class="token punctuation">(</span><span class="token string">&apos;user.numbers&apos;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// user.numbers = [1, 2, 4, 5, 6]</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>This action is most useful for toggling a checkboxes whose values represent items in a model&apos;s array.
+</li></ul>
+<h2 id="actionspushmodel-item"><code>actions.push(model, item)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that &quot;pushes&quot; the <code>item</code> to the array represented by the <code>model</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the array model where the <code>item</code> will be pushed.
+</li>
+<li><code>item</code> <em>(any)</em>: the item to be &quot;pushed&quot; in the model value.
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>This action does not mutate the model. It only simulates the mutable <code>.push()</code> method.
+</li></ul>
+<h2 id="actions-toggle"></h2>
+
+
+
+<h2 id="actionstogglemodel"><code>actions.toggle(model)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that sets the <code>model</code> to true if it is falsey, and false if it is truthy.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose value will be toggled.
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>This action is most useful for single checkboxes.
+</li></ul>
+<h2 id="actions-filter"></h2>
+
+
+
+<h2 id="actionsfiltermodel-iteratee"><code>actions.filter(model, iteratee)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that filters the array represented by the <code>model</code> through the <code>iteratee</code> function.</p><p>If no <code>iteratee</code> is specified, the identity function is used by default.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the array model to be filtered.
+</li>
+<li><code>iteratee</code> <em>(Function)</em>: the filter iteratee function that filters the array represented by the model.
+<ul><li>default: <code>identity</code> (<code>a =&gt; a</code>)
+</li></ul>
+</li></ul>
+<h2 id="actions-map"></h2>
+
+
+
+<h2 id="actionsmapmodel-iteratee"><code>actions.map(model, iteratee)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that maps the array represented by the <code>model</code> through the <code>iteratee</code> function.</p><p>If no <code>iteratee</code> is specified, the identity function is used by default.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the array model to be mapped.
+</li>
+<li><code>iteratee</code> <em>(Function)</em>: the map iteratee function that maps the array represented by the model.
+</li></ul>
+<h2 id="actions-remove"></h2>
+
+
+
+<h2 id="actionsremovemodel-index"><code>actions.remove(model, index)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that removes the item at the specified <code>index</code> of the array represented by the <code>model</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the array model to be updated.
+</li>
+<li><code>index</code> <em>(Number)</em>: the index that should be removed from the array.
+</li></ul>
+<h2 id="actions-move"></h2>
+
+
+
+<h2 id="actionsmovemodel-fromindex-toindex"><code>actions.move(model, fromIndex, toIndex)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that moves the item at the specified <code>fromIndex</code> of the array to the <code>toIndex</code> of the array represented by the <code>model</code>.</p><p>If <code>fromIndex</code> or <code>toIndex</code> are out of bounds, an error will be thrown.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the array model to be updated.
+</li>
+<li><code>fromIndex</code> <em>(Number)</em>: the index of the item that should be moved in the array.
+</li>
+<li><code>toIndex</code> <em>(Number)</em>: the index to move the item to in the array.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token comment" spellcheck="true">// Assuming this state:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//  foo: {</span>
+<span class="token comment" spellcheck="true">//     bar: [1, 2, 3, 4]</span>
+<span class="token comment" spellcheck="true">//   }</span>
+<span class="token comment" spellcheck="true">// }</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token string">&apos;foo.bar&apos;</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// the new foo.bar state:</span>
+<span class="token comment" spellcheck="true">// =&gt; [3, 1, 2, 4]</span></code></pre>
+<h2 id="actions-load"></h2>
+
+
+
+<h2 id="actionsloadmodel-value"><code>actions.load(model, value)</code></h2><p>Dispatches an <code>actions.change(...)</code> action that loads (updates) the <code>model</code> with <code>value</code> silently. It does not trigger any effects of a <code>CHANGE</code> action in the form reducer.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose value will be changed
+</li>
+<li><code>value</code> <em>(any)</em>: the value to load (update) the model with
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>This action is useful when you need to set an initial model value asynchronously.
+</li>
+<li>If the initial model value is available at runtime, prefer setting it as part of the <code>initialState</code> of the <code>modelReducer</code> instead.
+</li>
+<li>This is equivalent to calling <code>actions.change(model, value, { silent: true })</code>.
+</li></ul>
+<h2 id="actions-omit"></h2>
+
+
+
+<h2 id="actionsomitmodel-props"><code>actions.omit(model, props)</code></h2><p>Dispatches an <code>actions.change(...)</code> action with the <code>model</code> value updated to not include any of the omitted <code>props</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model to be modified with the omitted props
+</li>
+<li><code>props</code> <em>(String | String[])</em>: the props to omit from the model value
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token comment" spellcheck="true">// Assuming this state:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//   test: {</span>
+<span class="token comment" spellcheck="true">//     foo: 1,</span>
+<span class="token comment" spellcheck="true">//     bar: 2, </span>
+<span class="token comment" spellcheck="true">//     baz: 3</span>
+<span class="token comment" spellcheck="true">//   }</span>
+<span class="token comment" spellcheck="true">// }</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">omit</span><span class="token punctuation">(</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// the new test state: </span>
+<span class="token comment" spellcheck="true">// =&gt; { test: { bar: 2, baz: 3 } }</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">omit</span><span class="token punctuation">(</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;baz&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// the new test state:</span>
+<span class="token comment" spellcheck="true">// =&gt; { test: { bar: 2 } }</span></code></pre>
+<h1 id="field-action-creators">Field Action Creators</h1><p>All model and field actions can be imported via <code>import { actions } from &apos;react-redux-form&apos;</code>.</p><h2 id="actions-focus"></h2>
+
+
+
+<h2 id="actionsfocusmodel"><code>actions.focus(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.focus</code> state of the field model in the form to <code>true</code>.</p><p>The &quot;focus&quot; state indicates that the field model is the currently focused field in the form.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as focused
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// in a connect()-ed component:</span>
+<span class="token keyword">const</span> Newsletter <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> newsletterForm<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>form<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span>
+      onFocus<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token string">&apos;newsletter.email&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span> newsletterForm<span class="token punctuation">.</span>fields<span class="token punctuation">.</span>email<span class="token punctuation">.</span>focus <span class="token operator">&amp;&amp;</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>Sweet<span class="token punctuation">,</span> you&apos;re signing up<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>If possible, RRF will actually call <code>.focus()</code> on the DOM node if it is focusable.
+</li></ul>
+<h2 id="actions-blur"></h2>
+
+
+
+<h2 id="actionsblurmodel"><code>actions.blur(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.focus</code> state to <code>false</code>. It also indicates that the field model has been <code>.touched</code>, and will set that state to <code>true</code>.</p><p>A &quot;blurred&quot; field indicates that the field model control is not currently focused.</p><h3 id="arugments">Arugments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as blurred (not focused)
+</li></ul>
+<h2 id="actions-setPristine"></h2>
+
+
+
+<h2 id="actionssetpristinemodel"><code>actions.setPristine(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.pristine</code> state of the field model in the form to <code>true</code>.</p><p>The &quot;pristine&quot; state indicates that the user has not interacted with this field model yet.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as pristine
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>Whenever a field is set to pristine, the entire form is set to:
+<ul><li>pristine <em>if</em> all other fields are pristine
+</li>
+<li>otherwise, dirty.
+</li></ul>
+</li></ul>
+<h2 id="actions-setDirty"></h2>
+
+
+
+<h2 id="actionssetdirtymodel"><code>actions.setDirty(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.pristine</code> state to <code>false</code>.</p><p>A &quot;dirty&quot; field indicates that the model value has been changed, and is no longer pristine.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as not pristine (dirty)
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>Whenever a field is set to not pristine (dirty), the entire form is set to not pristine (dirty).
+</li></ul>
+<h2 id="actions-setPending"></h2>
+
+
+
+<h2 id="actionssetpendingmodel-pending"><code>actions.setPending(model, [pending])</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.pending</code> state of the field model in the form to <code>true</code>. It simultaneously sets the <code>.submitted</code> state to <code>false</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as pending
+</li>
+<li><code>pending</code> <em>(Boolean)</em>: whether the model is pending (<code>true</code>) or not (<code>false</code>).
+<ul><li>default: <code>true</code>
+</li></ul>
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>This action is useful when asynchronously validating or submitting a model. It represents the state between the initial and final state of a field model&apos;s validation/submission.
+</li></ul>
+<h2 id="actions-setTouched"></h2>
+
+
+
+<h2 id="actionssettouchedmodel"><code>actions.setTouched(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.touched</code> state of the field model in the form to <code>true</code>. It simultaneously sets the <code>.untouched</code> state to <code>false</code>.</p><p>The &quot;touched&quot; state indicates that this model has been interacted with.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code>: (String) the model indicated as touched
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>Setting a <code>model</code> to touched also sets the entire form to touched.
+</li>
+<li>Touched also sets the <code>model</code> to not focused (blurred).
+</li></ul>
+<h2 id="actions-setUntouched"></h2>
+
+
+
+<h2 id="actionssetuntouchedmodel"><code>actions.setUntouched(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.touched</code> state to <code>true</code>.</p><p>An &quot;untouched&quot; field indicates that this model has not been interacted with yet.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as not touched (untouched)
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>This action is useful for conditionally displaying error messages based on whether the field has been touched.
+</li></ul>
+<h2 id="actions-submit"></h2>
+
+
+
+<h2 id="actionssubmitmodel-promise"><code>actions.submit(model, promise)</code></h2><p>Waits for a submission <code>promise</code> to be completed, then, if successful:</p><ul><li>Sets <code>.submitted</code> property of form for <code>model</code> to <code>true</code>
+</li>
+<li>Sets <code>.validity</code> property of form for <code>model</code> to the response (or <code>true</code> if the response is <code>undefined</code>).
+</li></ul>
+<p>If the promise fails, the action will:</p><ul><li>set <code>.submitFailed</code> property of form for <code>model</code> to <code>true</code>
+</li>
+<li>set <code>.errors</code> property of form for <code>model</code> to the response
+</li></ul>
+<h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model to be submitted
+</li>
+<li><code>promise</code> <em>(Promise)</em>: the promise that the submit action will wait to be resolved or rejected
+</li>
+<li><code>options</code> <em>(Object)</em>: submit options:
+</li></ul>
+<h3 id="options">Options</h3><ul><li><code>.validate</code> <em>(Boolean)</em>: if <code>true</code> (default), will only submit the form if the form is valid. Default: <code>true</code>
+</li>
+<li><code>.validators</code> or <code>.errors</code> <em>(Object|Function)</em>: will first validate the form against the <code>.validators</code> or the <code>.errors</code> (error validators).
+<ul><li>If valid, the action will set the model&apos;s validity and proceed to submit the form.
+</li>
+<li>If invalid, the action will set the model&apos;s validity and not submit the form.
+</li></ul>
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch()</span>
+
+<span class="token comment" spellcheck="true">// promise</span>
+<span class="token keyword">const</span> postUser <span class="token operator">=</span> api<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* user data */</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment" spellcheck="true">// API success</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// validity = true</span>
+  <span class="token comment" spellcheck="true">// API failure</span>
+  <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> err<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// errors = err</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> postUser<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="actions-submitFields"></h2>
+
+
+
+<h2 id="actionssubmitfieldsmodel-promise"><code>actions.submitFields(model, promise)</code></h2><p>Waits for a submission <code>promise</code> to be completed, then, if successful:</p><ul><li>Sets <code>.submitted</code> property of form for <code>model</code> to <code>true</code>
+</li>
+<li>Each key in the response, which represents a sub-model (e.g., <code>&quot;name&quot;</code> for <code>users.name</code>) will have its <code>.validity</code> set to its value.
+</li></ul>
+<p>If the promise fails, the action will:</p><ul><li>set <code>.submitFailed</code> property of form for <code>model</code> to <code>true</code>
+</li>
+<li>Each key in the response, which represents a sub-model (e.g., <code>&quot;name&quot;</code> for <code>users.name</code>) will have its <code>.errors</code> set to its value. (See example)
+</li></ul>
+<h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model to be submitted
+</li>
+<li><code>promise</code> <em>(Promise)</em>: the promise that the submit action will wait to be resolved or rejected
+</li>
+<li><em><code>options</code></em> <em>(Object)</em>: submit options (see <a href="#actions-submit"><code>actions.submit</code></a>)
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch()</span>
+
+<span class="token comment" spellcheck="true">// promise</span>
+<span class="token keyword">const</span> postUser <span class="token operator">=</span> api<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* user data */</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment" spellcheck="true">// API success</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// validity = true</span>
+  <span class="token comment" spellcheck="true">// API failure</span>
+  <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> err<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// errors = err</span>
+
+<span class="token comment" spellcheck="true">// Assume the API (or promise) returns these errors:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//  &quot;email&quot;: [&quot;This email is already taken.&quot;],</span>
+<span class="token comment" spellcheck="true">//  &quot;phone&quot;: [&quot;Invalid area code.&quot;, &quot;Invalid format.&quot;],</span>
+<span class="token comment" spellcheck="true">// }</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">submitFields</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> postUser<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// The errors for `user.email` and `user.phone` will be set</span>
+<span class="token comment" spellcheck="true">// to the above values.</span></code></pre>
+<h2 id="actions-setSubmitted"></h2>
+
+
+
+<h2 id="actionssetsubmittedmodel-submitted"><code>actions.setSubmitted(model, [submitted])</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.submitted</code> state of the field model in the form to <code>submitted</code> (<code>true</code> or <code>false</code>). It simultaneously sets the <code>.pending</code> state to the inverse of <code>submitted</code>.</p><p>The &quot;submitted&quot; state indicates that this model has been &quot;sent off,&quot; or an action has been completed for the model.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as submitted
+</li>
+<li><code>submitted</code> <em>(Boolean)</em>: whether the model has been submitted (<code>true</code>) or not (<code>false</code>).
+<ul><li>default: <code>true</code>
+</li></ul>
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// action thunk creator</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">submitUser</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>dispatch<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setPending</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">&apos;...&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> body<span class="token punctuation">:</span> data <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// handle the response, then...</span>
+        <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setSubmitted</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>Use the <code>setPending()</code> and <code>setSubmitted()</code> actions together to update the state of the field model during some async action.
+</li></ul>
+<h2 id="actions-setSubmitFailed"></h2>
+
+
+
+<h2 id="actionssetsubmitfailedmodel"><code>actions.setSubmitFailed(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.submitFailed</code> state of the field model in the form to <code>true</code>. It simultaneously sets the <code>.pending</code> state to <code>false</code>, and the <code>.retouched</code> state to <code>false</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model indicated as having failed a submit
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>If the form has not been submitted yet, <code>.submitFailed = false</code>
+</li>
+<li>If submitting (pending), <code>.submitFailed = false</code>
+</li>
+<li>If submit failed, <code>.submitFailed = true</code>
+</li>
+<li>If resubmitting, <code>.submitFailed = false</code> again.
+</li></ul>
+<h2 id="actions-setInitial"></h2>
+
+
+
+<h2 id="actionssetinitialmodel"><code>actions.setInitial(model)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the state of the field model in the form to its initial state.</p><p>Here is the default initial field state:</p><pre><code class="lang-js"><span class="token keyword">const</span> initialFieldState <span class="token operator">=</span> <span class="token punctuation">{</span>
+  focus<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  pending<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  pristine<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  submitted<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  touched<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  valid<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  validating<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  viewValue<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  validity<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  errors<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model to be reset to its initial state
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>This action will reset the field state, but will <em>not</em> reset the <code>model</code> value in the model reducer. To reset both the field and model, use <code>actions.reset(model)</code>.
+</li></ul>
+<h1 id="validation-action-creators">Validation Action Creators</h1><h2 id="actions-setValidity"></h2>
+
+
+
+<h2 id="actionssetvaliditymodel-validity-options"><code>actions.setValidity(model, validity, [options])</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.valid</code> state of the field model in the form to <code>true</code> or <code>false</code>, based on the <code>validity</code> (see below). It will also set the <code>.validity</code> state of the field model to the <code>validity</code>.</p><p>It also sets the <code>.errors</code> on the field model to the inverse of the <code>validity</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity will be set
+</li>
+<li><code>validity</code> <em>(Boolean | Object)</em>: a boolean value or an object indicating which validation keys of the field model are valid.
+</li>
+<li><em><code>options</code></em> <em>(Object)</em>: an object containing options for the action creator:
+</li></ul>
+<h3 id="options">Options</h3><ul><li><code>.errors</code> <em>(Boolean)</em>: if <code>true</code>, the validity will be set for <code>.errors</code> instead of <code>.validity</code> on the field. This is equivalent to <code>actions.setErrors()</code>.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch():</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setValidity</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// email field:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//   valid: true,</span>
+<span class="token comment" spellcheck="true">//   validity: true,</span>
+<span class="token comment" spellcheck="true">//   errors: false</span>
+<span class="token comment" spellcheck="true">// }</span>
+
+<span class="token keyword">const</span> val <span class="token operator">=</span> <span class="token string">&apos;testing123&apos;</span><span class="token punctuation">;</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setValidity</span><span class="token punctuation">(</span><span class="token string">&apos;user.password&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  required<span class="token punctuation">:</span> val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+  correct<span class="token punctuation">:</span> val <span class="token operator">===</span> <span class="token string">&apos;hunter2&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// password field:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//   valid: false,</span>
+<span class="token comment" spellcheck="true">//   validity: { required: true, correct: false },</span>
+<span class="token comment" spellcheck="true">//   errors: { required: false, correct: true }</span>
+<span class="token comment" spellcheck="true">// }</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>If you <em>really</em> want to set error messages instead, use <code>actions.setErrors(model, errors)</code>.
+</li>
+<li>Since arrays are objects, the <code>validity</code> argument <em>can</em> be an array. Only do this if your use case requires it.
+</li></ul>
+<h2 id="actions-setFieldsValidity"></h2>
+
+
+
+<h2 id="actionssetfieldsvaliditymodel-fieldsvalidity"><code>actions.setFieldsValidity(model, fieldsValidity)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, sets the <code>.validity</code> state of each sub-model key in the <code>fieldsValidity</code> object to that key&apos;s value.</p><p>It simultaneously sets the <code>.errors</code> on each sub-model to the inverse of its validity.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose sub-model&apos;s validities will be set
+</li>
+<li><code>fieldsValidity</code> <em>(Object)</em>: an object whose keys are sub-models (e.g., <code>&apos;name&apos;</code> for <code>user.name</code>) and whose values are the validities for each sub-model.
+</li></ul>
+<h2 id="actions-validate"></h2>
+
+
+
+<h2 id="actionsvalidatemodel-validators"><code>actions.validate(model, validators)</code></h2><p>Returns an action thunk that calculates the <code>validity</code> of the <code>model</code> based on the function/object <code>validators</code>. Then, the thunk dispatches <code>actions.setValidity(model, validity)</code>.</p><p>A <strong>validator</strong> is a function that returns <code>true</code> if valid, and <code>false</code> if invalid.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity will be calculated
+</li>
+<li><code>validators</code> <em>(Function | Object)</em>: a validator function <em>or</em> an object whose keys are validation keys (such as <code>&apos;required&apos;</code>) and values are validators.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> isEmail <span class="token operator">=</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token comment" spellcheck="true">// ... check if email is valid</span>
+
+<span class="token comment" spellcheck="true">// assume user.email = &quot;foo@gmail&quot;</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch():</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> isEmail<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// will dispatch actions.setValidity(&apos;user.email&apos;, false)</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  isEmail<span class="token punctuation">,</span>
+  available<span class="token punctuation">:</span> <span class="token punctuation">(</span>email<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> email <span class="token operator">!==</span> <span class="token string">&apos;foo@gmail.com&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// will dispatch actions.setValidity(&apos;user.email&apos;, {</span>
+<span class="token comment" spellcheck="true">//  isEmail: false,</span>
+<span class="token comment" spellcheck="true">//  available: true</span>
+<span class="token comment" spellcheck="true">// });</span></code></pre>
+<h2 id="actions-asyncSetValidity"></h2>
+
+
+
+<h2 id="actionsasyncsetvaliditymodel-asyncvalidator"><code>actions.asyncSetValidity(model, asyncValidator)</code></h2><p>Returns an action thunk that calculates the <code>validity</code> of the <code>model</code> based on the async function <code>asyncValidator</code>. That function dispatches <code>actions.setValidity(model, validity)</code> by calling <code>done(validity)</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity will asynchronously be set
+</li>
+<li><code>asyncValidator(value, done)</code> <em>(Function)</em>: a function that is given two arguments:
+<ul><li><code>value</code> - the value of the <code>model</code>
+</li>
+<li><code>done</code> - the callback where the calculated <code>validity</code> is passed in as the argument.
+</li></ul>
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// async function</span>
+<span class="token keyword">function</span> <span class="token function">isEmailAvailable</span><span class="token punctuation">(</span>email<span class="token punctuation">,</span> done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">&apos;...&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> body<span class="token punctuation">:</span> email <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">done</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true or false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch():</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">asyncSetValidity</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> isEmailAvailable<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; 1. will set .pending to true, then eventually...</span>
+<span class="token comment" spellcheck="true">// =&gt; 2. will set .validity to response and .pending to false</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>This action is useful for general-purpose asynchronous validation using callbacks.  If you are using <em>promises</em>, using <code>actions.submit(model, promise)</code> is a simpler pattern.
+</li></ul>
+<h2 id="actions-setErrors"></h2>
+
+
+
+<h2 id="actionsseterrorsmodel-errors"><code>actions.setErrors(model, errors)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, changes the <code>.valid</code> state of the field model in the form to <code>true</code> or <code>false</code>, based on the <code>errors</code> (see below). It will also set the <code>.errors</code> state of the field model to the <code>errors</code>.</p><p>It simultaneously sets the <code>.validity</code> on the field model to the inverse of the <code>errors</code>.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity will be set
+</li>
+<li><code>errors</code> <em>(Boolean | Object | String)</em>: a truthy/falsey value or an object indicating which error keys of the field model are invalid.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch():</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// email field:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//   valid: false,</span>
+<span class="token comment" spellcheck="true">//   validity: false,</span>
+<span class="token comment" spellcheck="true">//   errors: true</span>
+<span class="token comment" spellcheck="true">// }</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;So many errors!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// email field:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//   valid: false,</span>
+<span class="token comment" spellcheck="true">//   validity: false,</span>
+<span class="token comment" spellcheck="true">//   errors: &apos;So many errors!&apos;</span>
+<span class="token comment" spellcheck="true">// }</span>
+
+<span class="token keyword">const</span> val <span class="token operator">=</span> <span class="token string">&apos;testing123&apos;</span><span class="token punctuation">;</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user.password&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  empty<span class="token punctuation">:</span> <span class="token operator">!</span><span class="token punctuation">(</span>val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;Password is required!&apos;</span><span class="token punctuation">,</span>
+  incorrect<span class="token punctuation">:</span> val <span class="token operator">!==</span> <span class="token string">&apos;hunter2&apos;</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;The password is wrong&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// password field:</span>
+<span class="token comment" spellcheck="true">// {</span>
+<span class="token comment" spellcheck="true">//   valid: false,</span>
+<span class="token comment" spellcheck="true">//   errors: { empty: false, incorrect: &apos;The password is wrong&apos; }</span>
+<span class="token comment" spellcheck="true">// }</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>If you aren&apos;t hard-coding error messages, use <code>actions.setValidity(model, validity)</code> instead. It&apos;s a cleaner pattern.
+</li>
+<li>You can set <code>errors</code> to a boolean, object, array, string, etc. Remember: truthy values indicate errors in <code>errors</code>.
+</li></ul>
+<h2 id="actions-setFieldsErrors"></h2>
+
+
+
+<h2 id="actionssetfieldserrorsmodel-fieldserrors"><code>actions.setFieldsErrors(model, fieldsErrors)</code></h2><p>Returns an action that, when handled by a <a href="TODO"><code>formReducer</code></a>, sets the <code>.errors</code> state of each sub-model key in the <code>fieldsErrors</code> object to that key&apos;s value.</p><p>It simultaneously sets the <code>.validity</code> on each sub-model to the inverse of its errors.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose sub-models validities will be set
+</li>
+<li><code>fieldsErrors</code> <em>(Object)</em>: an object whose keys are sub-models (e.g., <code>&apos;name&apos;</code> for <code>user.name</code>) and whose values are the errors for each sub-model.
+</li></ul>
+<h2 id="actions-validateErrors"></h2>
+
+
+
+<h2 id="actionsvalidateerrorsmodel-errorvalidators"><code>actions.validateErrors(model, errorValidators)</code></h2><p>Returns an action thunk that calculates the <code>errors</code> of the <code>model</code> based on the function/object <code>errorValidators</code>. Then, the thunk dispatches <code>actions.setErrors(model, errors)</code>.</p><p>An <strong>error validator</strong> is a function that returns <code>true</code> or a truthy value (such as a string) if invalid, and <code>false</code> if valid.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity will be calculated
+</li>
+<li><code>errorValidators</code> <em>(Function | Object)</em>: an error validator <em>or</em> an object whose keys are error keys (such as <code>&apos;incorrect&apos;</code>) and values are error validators.
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isEmail <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;validator&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// assume user.email = &quot;foo@gmail&quot;</span>
+
+<span class="token comment" spellcheck="true">// somewhere with dispatch():</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validateErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">!</span><span class="token function">isEmail</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;Not an email!&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// will dispatch actions.setErrors(&apos;user.email&apos;, &apos;Not an email!&apos;)</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validateErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  notAnEmail<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span><span class="token function">isEmail</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;Not an email!&apos;</span><span class="token punctuation">,</span>
+  unavailable<span class="token punctuation">:</span> <span class="token punctuation">(</span>email<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> email <span class="token operator">==</span> <span class="token string">&apos;foo@gmail.com&apos;</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;Use a different email&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// will dispatch actions.setErrors(&apos;user.email&apos;, {</span>
+<span class="token comment" spellcheck="true">//  notAnEmail: &apos;Not an email!&apos;,</span>
+<span class="token comment" spellcheck="true">//  unavailable: false</span>
+<span class="token comment" spellcheck="true">// });</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>As previously stated, if you aren&apos;t using error messages, use <code>actions.validate(model, validators)</code> as a cleaner pattern.
+</li></ul>
+<h2 id="actions-validateFields"></h2>
+
+
+
+<h2 id="actionsvalidatefieldsmodel-fieldvalidators"><code>actions.validateFields(model, fieldValidators)</code></h2><p>Returns an action thunk that calculates the <code>validity</code> for each sub-model key of the <code>fieldValidators</code> object based on the value, which is a <code>validator</code>. Then, the thunk dispatches <code>actions.setValidity(model, validity)</code> for all of the sub-models.</p><p>A <strong>validator</strong> is a function that returns <code>true</code> or a truthy value (such as a string) if valid, and <code>false</code> if invalid.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity will be calculated
+</li>
+<li><code>fieldValidators</code> <em>(Object)</em>: an object whose keys are sub-models, and whose values are validators for each sub-model (see example).
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isEmail <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;validator&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> required <span class="token operator">=</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span><span class="token operator">!</span><span class="token punctuation">(</span>value <span class="token operator">&amp;&amp;</span> value<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validateFields</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  email<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isEmail<span class="token punctuation">,</span>
+    required<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  username<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    goodLength<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val<span class="token punctuation">.</span>length <span class="token operator">&lt;=</span> <span class="token number">8</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="actions-validateFieldsErrors"></h2>
+
+
+
+<h2 id="actionsvalidatefieldserrorsmodel-fielderrorsvalidators"><code>actions.validateFieldsErrors(model, fieldErrorsValidators)</code></h2><p>Returns an action thunk that calculates the <code>errors</code> for each sub-model key of the <code>fieldErrorsValidators</code> object based on the value, which is an <code>errorValidator</code>. Then, the thunk dispatches <code>actions.setErrors(model, errors)</code> for all of the sub-models.</p><p>An <strong>error validator</strong> is a function that returns <code>true</code> or a truthy value (such as a string) if invalid, and <code>false</code> if valid.</p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose errors will be calculated
+</li>
+<li><code>fieldErrorsValidators</code> <em>(Object)</em>: an object whose keys are sub-models, and whose values are error validators for each sub-model (see example).
+</li></ul>
+<h3 id="example">Example</h3><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isEmail <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;validator&apos;</span><span class="token punctuation">;</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validateFieldsErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  email<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isMissing<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span>val <span class="token operator">||</span> <span class="token operator">!</span>val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    invalidEmail<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">!</span><span class="token function">isEmail</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  username<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    tooLong<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">8</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="actions-resetValidity"></h2>
+
+
+
+<h2 id="actionsresetvaliditymodel"><code>actions.resetValidity(model)</code></h2><p>Resets the <code>.validity</code> and <code>.errors</code> for the field model to the <code>.validity</code> and <code>.errors</code> of the initial field state.</p><p><em>Alias:</em> <code>actions.resetErrors(model)</code></p><h3 id="arguments">Arguments</h3><ul><li><code>model</code> <em>(String | Function)</em>: the model whose validity and errors will be reset.
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="combineForms.html" class="navigation navigation-prev " aria-label="Previous page: combineForms">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../recipes/README.md" class="navigation navigation-next " aria-label="Next page: Recipes and Examples">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"action creators","level":"1.3.6","depth":2,"next":{"title":"Recipes and Examples","level":"1.4","depth":1,"path":"docs/recipes/README.md","ref":"docs/recipes/README.md","articles":[{"title":"Quick Start","level":"1.4.1","depth":2,"path":"docs/recipes/quickstart.md","ref":"docs/recipes/quickstart.md","articles":[]}]},"previous":{"title":"combineForms","level":"1.3.5","depth":2,"path":"docs/api/combineForms.md","ref":"docs/api/combineForms.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/davidkpiano/react-redux-form"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Form","gitbook":"3.x.x"},"file":{"path":"docs/api/actions.md","mtime":"2016-09-11T13:59:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T14:04:38.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

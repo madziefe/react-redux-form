@@ -1,0 +1,9 @@
+dist/
+lib/
+umd/
+docs/
+_book/
+esdoc/
+webpack.config.*
+wallaby.config.*
+examples/

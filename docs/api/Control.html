@@ -1,0 +1,714 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Control component · React Redux Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Field.html" />
+    
+    
+    <link rel="prev" href="README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../guides/README.md">
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../guides/quickstart.html">
+            
+                <a href="../guides/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../guides/models.html">
+            
+                <a href="../guides/models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../guides/validation.html">
+            
+                <a href="../guides/validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../guides/tracking.html">
+            
+                <a href="../guides/tracking.html">
+            
+                    
+                    Tracking Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../guides/custom-controls.html">
+            
+                <a href="../guides/custom-controls.html">
+            
+                    
+                    Custom Controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../guides/compare-redux-form.html">
+            
+                <a href="../guides/compare-redux-form.html">
+            
+                    
+                    Compare to Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="README.md">
+            
+                <span>
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="Control.html">
+            
+                <a href="Control.html">
+            
+                    
+                    Control component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Field.html">
+            
+                <a href="Field.html">
+            
+                    
+                    Field component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="modelReducer.html">
+            
+                <a href="modelReducer.html">
+            
+                    
+                    modelReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="formReducer.html">
+            
+                <a href="formReducer.html">
+            
+                    
+                    formReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="combineForms.html">
+            
+                <a href="combineForms.html">
+            
+                    
+                    combineForms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="actions.html">
+            
+                <a href="actions.html">
+            
+                    
+                    action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../recipes/README.md">
+            
+                <span>
+            
+                    
+                    Recipes and Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../recipes/quickstart.html">
+            
+                <a href="../recipes/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Control component</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="control-component">Control Component</h1><p><strong>Prop Types</strong></p><ul><li><a href="#prop-model"><code>model</code> (required)</a>
+</li>
+<li><a href="#prop-mapProps"><code>mapProps</code></a>
+</li>
+<li><a href="#prop-updateOn"><code>updateOn</code></a>
+</li>
+<li><a href="#prop-validators"><code>validators</code></a>
+</li>
+<li><a href="#prop-validateOn"><code>validateOn</code></a>
+</li>
+<li><a href="#prop-asyncValidators"><code>asyncValidators</code></a>
+</li>
+<li><a href="#prop-asyncValidateOn"><code>asyncValidateOn</code></a>
+</li>
+<li><a href="#prop-errors"><code>errors</code></a>
+</li>
+<li><a href="#prop-parser"><code>parser</code></a>
+</li>
+<li><a href="#prop-changeAction"><code>changeAction</code></a>
+</li>
+<li><a href="#prop-controlProps"><code>controlProps</code></a>
+</li>
+<li><a href="#prop-component"><code>component</code></a>
+</li>
+<li><a href="#prop-ignore"><code>ignore</code></a>
+</li></ul>
+<h2 id="control"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code></h2><p>The <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> component represents a form control, such as an <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token punctuation">/&gt;</span></span></code>, <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">&gt;</span></span></code>, <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token punctuation">/&gt;</span></span></code>, etc.</p><p>It is a connected component, and will use the <code>model</code> prop to connect itself to the Redux store and dispatch the appropriate actions for each event handler.</p><p>The following pre-defined <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code>s are available:</p><ul><li><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> or <code>&lt;Control.input&gt;</code> for standard <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token punctuation">/&gt;</span></span></code> controls
+</li>
+<li><code>&lt;Control.text&gt;</code> for <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code>
+</li>
+<li><code>&lt;Control.radio&gt;</code> for <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>radio<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code>
+</li>
+<li><code>&lt;Control.checkbox&gt;</code> for <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code>
+</li>
+<li><code>&lt;Control.file&gt;</code> for <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code>
+</li>
+<li><code>&lt;Control.select&gt;</code> for <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span></code>
+</li></ul>
+<p>For making custom controls that work with React Redux Form, see the <a href="../guides/custom-controls.html">custom controls documentation</a>.</p><pre><code class="lang-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>form<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Name<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text model<span class="token operator">=</span><span class="token string">&quot;user.name&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Favorite color<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>select model<span class="token operator">=</span><span class="token string">&quot;user.faveColor&quot;</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;red&quot;</span><span class="token operator">&gt;</span>red<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;green&quot;</span><span class="token operator">&gt;</span>green<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;blue&quot;</span><span class="token operator">&gt;</span>blue<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Control<span class="token punctuation">.</span>select<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// no need to connect</span></code></pre>
+<h1 id="prop-types">Prop Types</h1><h2 id="prop-model"></h2>
+
+
+
+<h2 id="model-required"><code>model=&quot;...&quot;</code> (required)</h2><p><em>(String | Function)</em>: The string representing the model value in the store.</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// in store.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token function">combineForms</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token string">&apos;user&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment" spellcheck="true">// in component&apos;s render() method</span>
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text model<span class="token operator">=</span><span class="token string">&quot;user.name&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<p>It can also be a function that returns a string model. See <a href="../guides/tracking.html">the documentation on tracking</a> for more information.</p><h2 id="prop-mapProps"></h2>
+
+
+
+<h2 id="mapprops"><code>mapProps={{...}}</code></h2><p><em>(Object)</em>: A mapping of control-specific property keys to prop-getter functions that taken in the original props and return the result prop. See <a href="../guides/custom-controls.html">the documentation on custom controls</a> for more information.</p><p>Example:</p><pre><code class="lang-js"><span class="token operator">&lt;</span>Control
+  mapProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    customChange<span class="token punctuation">:</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> props<span class="token punctuation">.</span>change<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  model<span class="token operator">=</span><span class="token string">&quot;...&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="prop-updateOn"></h2>
+
+
+
+<h2 id="updateon"><code>updateOn=&quot;...&quot;</code></h2><p><em>(String | Array)</em>: A string/array of strings specifying when the component should dispatch a <code>change(...)</code> action, with one of these values:</p><ul><li><code>&quot;change&quot;</code> - will dispatch in <code>onChange</code>
+</li>
+<li><code>&quot;blur&quot;</code> - will dispatch in <code>onBlur</code>
+</li>
+<li><code>&quot;focus&quot;</code> - will dispatch in <code>onFocus</code>
+</li></ul>
+<p>So, <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span> <span class="token attr-name">model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foo.bar<span class="token punctuation">&quot;</span></span> <span class="token attr-name">updateOn</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>blur<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span></code> will only dispatch the <code>change(...)</code> action on blur.</p><p>You can also specify <code>updateOn={[&apos;change&apos;, &apos;blur&apos;]}</code> as an array of one or more of the above values.</p><h3 id="notes">Notes</h3><ul><li>Use the <code>changeAction</code> prop if you want to dispatch custom actions along with the <code>actions.change(...)</code> action.
+</li></ul>
+<h2 id="prop-validators"></h2>
+
+
+
+<h2 id="validators"><code>validators={{...}}</code></h2><p><em>(Object)</em>: A map where the keys are validation keys, and the values are the corresponding functions that determine the validity of each key, given the model&apos;s value.</p><p>For example, this control validates that a username exists and is longer than 4 characters:</p><pre><code class="lang-js"><span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;user.username&quot;</span>
+  validators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    length<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">4</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>If using ES2015 and you have validator functions, you can do this destructuring shortcut:
+</li></ul>
+<pre><code class="lang-js"><span class="token keyword">const</span> required <span class="token operator">=</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+<span class="token keyword">const</span> length <span class="token operator">=</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">8</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;user.username&quot;</span>
+  validators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> required<span class="token punctuation">,</span> length <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="prop-validateOn"></h2>
+
+
+
+<h2 id="validateon"><code>validateOn=&quot;...&quot;</code></h2><p><em>(String | Array)</em>: A string/array of strings specifying when validation should occur. By default, validation happens with whatever <code>updateOn</code> is set to. The <code>validateOn</code> property can have these values:</p><ul><li><code>&quot;change&quot;</code> - validate on the <code>onChange</code> event handler
+</li>
+<li><code>&quot;blur&quot;</code> - validate on the <code>onBlur</code> event handler
+</li>
+<li><code>&quot;focus&quot;</code> - validate on the <code>onFocus</code> event handler
+</li></ul>
+<h3 id="notes">Notes</h3><ul><li>Validation will always occur <strong>on load</strong>; i.e., when the component is mounted. This is to ensure an accurate validation state for a new form.
+</li>
+<li>To avoid displaying error messages on load (as controls might be invalid), use the <code>.pristine</code> property of the control when conditionally showing error messages, or use the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Errors</span><span class="token punctuation">&gt;</span></span></code> component.
+</li></ul>
+<h2 id="prop-asyncValidators"></h2>
+
+
+
+<h2 id="asyncvalidators"><code>asyncValidators={{...}}</code></h2><p><em>(Object)</em>: A map where the keys are validation keys, and the values are the corresponding functions that (asynchronously) determine the validity of each key, given the model&apos;s value.</p><p>Each async validator function is called with 2 arguments:</p><ul><li><code>value</code> - the model value
+</li>
+<li><code>done(validity)</code> - a callback function that should be called with the calculated validity
+</li></ul>
+<p>For example, this control validates that a username is available via a promise:</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// function that returns a promise</span>
+<span class="token keyword">import</span> isAvailable <span class="token keyword">from</span> <span class="token string">&apos;../path/to/is-available&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text model<span class="token operator">=</span><span class="token string">&quot;user.username&quot;</span>
+  asyncValidators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    isAvailable<span class="token punctuation">:</span> <span class="token punctuation">(</span>value<span class="token punctuation">,</span> done<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">isAvailable</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">done</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>Async validators will run on <code>blur</code>, unless you specify otherwise in the <code>asyncValidateOn=&quot;...&quot;</code> prop.
+</li></ul>
+<h2 id="prop-asyncValidateOn"></h2>
+
+
+
+<h2 id="asyncvalidateon"><code>asyncValidateOn=&quot;...&quot;</code></h2><p><em>(String | Array)</em>: A string/array of strings specifying when async validation should occur. By default, validation happens on <code>&quot;blur&quot;</code>. The <code>asyncValidateOn</code> property can have these values:</p><ul><li><code>&quot;change&quot;</code> - validate on the <code>onChange</code> event handler
+</li>
+<li><code>&quot;blur&quot;</code> (default) - validate on the <code>onBlur</code> event handler
+</li>
+<li><code>&quot;focus&quot;</code> - validate on the <code>onFocus</code> event handler
+</li></ul>
+<h2 id="prop-errors"></h2>
+
+
+
+<h2 id="errors"><code>errors={{...}}</code></h2><p><em>(Object)</em>: A map where the keys are error keys, and the values are the corresponding error validator functions that determine the invalidity of each key, given the model&apos;s value.</p><p>An <strong>error validator</strong> is a function that returns <code>true</code> or a truthy value (such as a string) if invalid, and <code>false</code> if valid.</p><p>For example, this control validates that a username exists and is longer than 4 characters:</p><pre><code class="lang-js"><span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;user.username&quot;</span>
+  errors<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    isEmpty<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span>val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    tooLong<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">16</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="prop-parser"></h2>
+
+
+
+<h3 id="parser--"><code>parser={() =&gt; ...}</code></h3><p><em>(Function)</em>: A function that <em>parses</em> the view value of the control before it is changed. It takes in two arguments:</p><ul><li><code>value</code> - the view value that represents the <em>next</em> model value
+</li>
+<li><code>previous</code> (optional) - the current model value <em>before</em> it is changed
+</li></ul>
+<p><strong>Example</strong></p><pre><code class="lang-js"><span class="token keyword">function</span> <span class="token function">toAge</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  type<span class="token operator">=</span><span class="token string">&quot;number&quot;</span>
+  model<span class="token operator">=</span><span class="token string">&quot;user.age&quot;</span>
+  parser<span class="token operator">=</span><span class="token punctuation">{</span> toAge <span class="token punctuation">}</span>
+<span class="token operator">&gt;</span></code></pre>
+<h2 id="prop-changeAction"></h2>
+
+
+
+<h2 id="changeaction--"><code>changeAction={() =&gt; ...}</code></h2><p>An action creator (function) that specifies which action the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> component should use when dispatching a change to the model. For example, this action is similar to:</p><ul><li><code>actions.change(model, value)</code> for text input controls
+</li>
+<li><code>actions.toggle(model, value)</code> for checkboxes (single-value models)
+</li>
+<li><code>actions.xor(model, value)</code> for checkboxes (multi-value models)
+</li></ul>
+<p>The action creator takes in two arguments:</p><ul><li><code>model</code> - the model that is being changed
+</li>
+<li><code>value</code> - the value that the model is being changed to
+</li></ul>
+<h3 id="example">Example</h3><p>To create a custom <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> that submits the form on blur:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control<span class="token punctuation">,</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> submitPromise <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token comment" spellcheck="true">// a promise</span>
+
+<span class="token keyword">function</span> <span class="token function">changeAndSubmit</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>dispatch<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> submitPromise<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// Then, in your &lt;Control&gt; components...</span>
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span>
+  model<span class="token operator">=</span><span class="token string">&quot;user.name&quot;</span>
+  changeAction<span class="token operator">=</span> <span class="token punctuation">{</span> changeAndSubmit <span class="token punctuation">}</span>
+  updateOn<span class="token operator">=</span><span class="token string">&quot;blur&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h3 id="notes">Notes</h3><ul><li>Use <code>changeAction</code> to do any other custom actions whenever your value is to change.
+</li>
+<li>Since <code>changeAction</code> expects an action creator and <code>redux-thunk</code> is used, you can asynchronously dispatch actions (like the example above).
+</li></ul>
+<h2 id="prop-controlProps"></h2>
+
+
+
+<h3 id="controlprops"><code>controlProps={{...}}</code></h3><p><em>(Object)</em>: A mapping of control-specific props that will be applied directly to the rendered control. In some cases, this can be a safer way of applying props, especially if there are naming conflicts between <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code>-specific props (such as <code>&quot;model&quot;</code>) and props that need to go on the rendered control (e.g., <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">{...props}</span> <span class="token punctuation">/&gt;</span></span></code>).</p><p>The normal behavior is that any extraneous props on <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> that are not part of <code>Control.propTypes</code> (which are documented here) will be given to the rendered input.</p><p>Example:</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// Suppose your &lt;CustomInput&gt; takes in an &quot;errors&quot; prop:</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;...&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>CustomInput<span class="token punctuation">}</span>
+  controlProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>errors<span class="token punctuation">:</span> <span class="token string">&apos;errors for CustomInput&apos;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="prop-component"></h2>
+
+
+
+<h3 id="component"><code>component={...}</code></h3><p><em>(Function | String | Node)</em>: A custom component can be passed into the <code>component={...}</code> prop, and standard control props and event handlers (such as <code>onChange</code>, <code>onBlur</code>, <code>onFocus</code>, <code>value</code>, etc.) will be mapped as expected:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> MyTextInput <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">&lt;</span>input className<span class="token operator">=</span><span class="token string">&quot;my-input&quot;</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// usage inside render():</span>
+<span class="token operator">&lt;</span>Control
+  model<span class="token operator">=</span><span class="token string">&quot;user.firstName&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>MyTextInput<span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="prop-ignore"></h2>
+
+
+
+<h3 id="ignore"><code>ignore={[...]}</code></h3><p><em>(String | Array)</em>: The event(s) that you want the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> to ignore. This can be good for performance and/or for de-cluttering the console log.</p><p>For instance, if you don&apos;t care whether a <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> is focused or blurred:</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// will ignore onFocus and onBlur</span>
+<span class="token operator">&lt;</span>Control
+  model<span class="token operator">=</span><span class="token string">&quot;...&quot;</span>
+  ignore<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token string">&apos;focus&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;blur&apos;</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: API Reference">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Field.html" class="navigation navigation-next " aria-label="Next page: Field component">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Control component","level":"1.3.1","depth":2,"next":{"title":"Field component","level":"1.3.2","depth":2,"path":"docs/api/Field.md","ref":"docs/api/Field.md","articles":[]},"previous":{"title":"API Reference","level":"1.3","depth":1,"path":"docs/api/README.md","ref":"docs/api/README.md","articles":[{"title":"Control component","level":"1.3.1","depth":2,"path":"docs/api/Control.md","ref":"docs/api/Control.md","articles":[]},{"title":"Field component","level":"1.3.2","depth":2,"path":"docs/api/Field.md","ref":"docs/api/Field.md","articles":[]},{"title":"modelReducer","level":"1.3.3","depth":2,"path":"docs/api/modelReducer.md","ref":"docs/api/modelReducer.md","articles":[]},{"title":"formReducer","level":"1.3.4","depth":2,"path":"docs/api/formReducer.md","ref":"docs/api/formReducer.md","articles":[]},{"title":"combineForms","level":"1.3.5","depth":2,"path":"docs/api/combineForms.md","ref":"docs/api/combineForms.md","articles":[]},{"title":"action creators","level":"1.3.6","depth":2,"path":"docs/api/actions.md","ref":"docs/api/actions.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/davidkpiano/react-redux-form"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Form","gitbook":"3.x.x"},"file":{"path":"docs/api/Control.md","mtime":"2016-09-11T18:56:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T14:04:38.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

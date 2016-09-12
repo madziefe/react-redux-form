@@ -1,0 +1,527 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Custom Controls · React Redux Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="compare-redux-form.html" />
+    
+    
+    <link rel="prev" href="tracking.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="models.html">
+            
+                <a href="models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="validation.html">
+            
+                <a href="validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="tracking.html">
+            
+                <a href="tracking.html">
+            
+                    
+                    Tracking Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="custom-controls.html">
+            
+                <a href="custom-controls.html">
+            
+                    
+                    Custom Controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="compare-redux-form.html">
+            
+                <a href="compare-redux-form.html">
+            
+                    
+                    Compare to Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../api/README.md">
+            
+                <span>
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../api/Control.html">
+            
+                <a href="../api/Control.html">
+            
+                    
+                    Control component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../api/Field.html">
+            
+                <a href="../api/Field.html">
+            
+                    
+                    Field component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../api/modelReducer.html">
+            
+                <a href="../api/modelReducer.html">
+            
+                    
+                    modelReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../api/formReducer.html">
+            
+                <a href="../api/formReducer.html">
+            
+                    
+                    formReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../api/combineForms.html">
+            
+                <a href="../api/combineForms.html">
+            
+                    
+                    combineForms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../api/actions.html">
+            
+                <a href="../api/actions.html">
+            
+                    
+                    action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../recipes/README.md">
+            
+                <span>
+            
+                    
+                    Recipes and Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../recipes/quickstart.html">
+            
+                <a href="../recipes/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Custom Controls</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="custom-controls">Custom Controls</h1><p>Sometimes you want to use 3rd-party component libraries, such as <a href="http://www.material-ui.com" target="_blank">Material-UI</a>, <a href="https://react-bootstrap.github.io" target="_blank">React Bootstrap</a>, or better yet, creating your own custom components. It is straightforward to map RRF&apos;s actions to event handlers on any kind of custom component:</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// ...</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// existing custom component</span>
+<span class="token keyword">import</span> CustomInput <span class="token keyword">from</span> <span class="token string">&apos;../path/to/custom-input-component&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// wrapper component</span>
+<span class="token comment" spellcheck="true">// (should be connected to redux store)</span>
+<span class="token keyword">class</span> <span class="token class-name">MyCustomInput</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> model<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>CustomInput
+        onCustomChange<span class="token operator">=</span><span class="token punctuation">{</span>e <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// ...</span>
+
+<span class="token comment" spellcheck="true">// Usage:</span>
+<span class="token operator">&lt;</span>MyCustomInput model<span class="token operator">=</span><span class="token string">&quot;user.name&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<p>However, this can get a bit tedious, especially for complex controls. Thankfully, there&apos;s an easier way.</p><h2 id="custom-controls-with-control">Custom Controls with <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code></h2><p>With the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> component, a custom component can be passed into the <code>component={...}</code> prop, and standard control props and event handlers (such as <code>onChange</code>, <code>onBlur</code>, <code>onFocus</code>, <code>value</code>, etc.) will be mapped as expected:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> MyTextInput <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">&lt;</span>input className<span class="token operator">=</span><span class="token string">&quot;my-input&quot;</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// usage inside render():</span>
+<span class="token operator">&lt;</span>Control
+  model<span class="token operator">=</span><span class="token string">&quot;user.firstName&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>MyTextInput<span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<p>The mapping standard props to custom controls can be specified by the type of <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> component you are using:</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// custom radio button</span>
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>radio
+  model<span class="token operator">=</span><span class="token string">&quot;user.gender&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>MyRadio<span class="token punctuation">}</span>
+  value<span class="token operator">=</span><span class="token string">&quot;F&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment" spellcheck="true">// custom checkbox</span>
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>checkbox
+  model<span class="token operator">=</span><span class="token string">&quot;user.active&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>MyCheckbox<span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment" spellcheck="true">// ... etc.</span></code></pre>
+<p>By default, any props on <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> that are <em>not</em> part of the <code>Control.propTypes</code> will be passed down to the custom component. To prevent naming collisions or for more predictable prop-passing behavior, you can also specify the props in the <code>controlProps={...}</code> prop:</p><pre><code class="lang-js"><span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>checkbox
+  model<span class="token operator">=</span><span class="token string">&quot;user.active&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>MyCheckbox<span class="token punctuation">}</span>
+  label<span class="token operator">=</span><span class="token string">&quot;Is user active?&quot;</span> <span class="token comment" spellcheck="true">// will be passed to MyCheckbox</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>checkbox
+  model<span class="token operator">=</span><span class="token string">&quot;user.active&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>MyCheckbox<span class="token punctuation">}</span>
+  controlProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    label<span class="token punctuation">:</span> <span class="token string">&apos;Is user active?&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// will also be passed to Mycheckbox</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="advanced-custom-controls">Advanced Custom Controls</h2><p>Some custom controls won&apos;t have prop keys that match up exactly with the standard event handler props, such as <code>onChangeText</code> in React Native&apos;s <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TextInput</span><span class="token punctuation">&gt;</span></span></code> component corresponding to <code>onChange</code>. You can specify a prop mapping in the <code>mapProps={{...}}</code> prop to specify the mapping:</p><pre><code class="lang-js"><span class="token operator">&lt;</span>Control
+  model<span class="token operator">=</span><span class="token string">&quot;...&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>DatePickerIOS<span class="token punctuation">}</span>
+  mapProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    date<span class="token punctuation">:</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> props<span class="token punctuation">.</span>modelValue<span class="token punctuation">,</span>
+    onDateChange<span class="token punctuation">:</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> props<span class="token punctuation">.</span>onChange<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<p>In <code>mapProps</code>, the <strong>key</strong> corresponds to the <em>custom</em> control&apos;s prop key, and the <strong>value</strong> is a function that takes in the standard <code>props</code> applied to <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> and returns the prop value that the custom prop should map to.</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tracking.html" class="navigation navigation-prev " aria-label="Previous page: Tracking Collections">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="compare-redux-form.html" class="navigation navigation-next " aria-label="Next page: Compare to Redux-Form">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Custom Controls","level":"1.2.5","depth":2,"next":{"title":"Compare to Redux-Form","level":"1.2.6","depth":2,"path":"docs/guides/compare-redux-form.md","ref":"docs/guides/compare-redux-form.md","articles":[]},"previous":{"title":"Tracking Collections","level":"1.2.4","depth":2,"path":"docs/guides/tracking.md","ref":"docs/guides/tracking.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/davidkpiano/react-redux-form"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Form","gitbook":"3.x.x"},"file":{"path":"docs/guides/custom-controls.md","mtime":"2016-09-05T14:49:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T14:04:38.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

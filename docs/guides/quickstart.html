@@ -1,0 +1,549 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Quick Start · React Redux Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="models.html" />
+    
+    
+    <link rel="prev" href="README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="models.html">
+            
+                <a href="models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="validation.html">
+            
+                <a href="validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="tracking.html">
+            
+                <a href="tracking.html">
+            
+                    
+                    Tracking Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="custom-controls.html">
+            
+                <a href="custom-controls.html">
+            
+                    
+                    Custom Controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="compare-redux-form.html">
+            
+                <a href="compare-redux-form.html">
+            
+                    
+                    Compare to Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../api/README.md">
+            
+                <span>
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../api/Control.html">
+            
+                <a href="../api/Control.html">
+            
+                    
+                    Control component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../api/Field.html">
+            
+                <a href="../api/Field.html">
+            
+                    
+                    Field component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../api/modelReducer.html">
+            
+                <a href="../api/modelReducer.html">
+            
+                    
+                    modelReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../api/formReducer.html">
+            
+                <a href="../api/formReducer.html">
+            
+                    
+                    formReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../api/combineForms.html">
+            
+                <a href="../api/combineForms.html">
+            
+                    
+                    combineForms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../api/actions.html">
+            
+                <a href="../api/actions.html">
+            
+                    
+                    action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../recipes/README.md">
+            
+                <span>
+            
+                    
+                    Recipes and Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../recipes/quickstart.html">
+            
+                <a href="../recipes/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Quick Start</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="quick-start">Quick Start</h1><p>This step-by-step guide assumes that you already have a project set up with:</p><ul><li>NPM (with a <code>package.json</code> file, though this is optional)
+</li>
+<li>module importing with Webpack (or another bundler): <a href="https://github.com/petehunt/webpack-howto" target="_blank">https://github.com/petehunt/webpack-howto</a>
+</li>
+<li>ES6 compilation with Babel: <a href="http://jamesknelson.com/the-complete-guide-to-es6-with-babel-6/" target="_blank">http://jamesknelson.com/the-complete-guide-to-es6-with-babel-6/</a>
+</li>
+<li>Using React with ES6/Babel: <a href="http://jamesknelson.com/react-babel-cheatsheet/" target="_blank">http://jamesknelson.com/react-babel-cheatsheet/</a>
+</li></ul>
+<p>Check out the above links if you need any help with those prerequisites.</p><h3 id="1-install-react-redux-form-and-its-prerequisite-dependencies-including-redux-thunk">1. Install <code>react-redux-form</code> and its prerequisite dependencies (including <code>redux-thunk</code>).</h3><ul><li><code>npm install react react-dom --save</code>
+</li>
+<li><code>npm install redux react-redux --save</code>
+</li>
+<li><code>npm install redux-thunk --save</code>
+</li>
+<li><code>npm install react-redux-form --save</code>
+</li></ul>
+<h3 id="2-setup-your-app">2. Setup your app.</h3><pre><code class="lang-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Provider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// We&apos;ll create this in step 3.</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">&apos;./store.js&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// We&apos;ll create this in step 4.</span>
+<span class="token keyword">import</span> UserForm <span class="token keyword">from</span> <span class="token string">&apos;./components/UserForm.js&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Provider store<span class="token operator">=</span><span class="token punctuation">{</span> store <span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>UserForm <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Provider<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;app&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="3-setup-your-store">3. Setup your store.</h3><p>We&apos;ll be using <a href="%27../api/combineForms.html%27"><code>combineForms</code></a> to create the reducer that contains all of your <code>modelReducer</code>s, and
+a single <code>formReducer</code> under the <code>&apos;form&apos;</code> key.</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// ./store.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  createStore<span class="token punctuation">,</span>
+  applyMiddleware
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> combineForms <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> thunk <span class="token keyword">from</span> <span class="token string">&apos;redux-thunk&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> initialUserState <span class="token operator">=</span> <span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token function">combineForms</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  user<span class="token punctuation">:</span> initialUserState<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">applyMiddleware</span><span class="token punctuation">(</span>thunk<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> store<span class="token punctuation">;</span></code></pre>
+<h3 id="4-setup-your-form">4. Setup your form!</h3><pre><code class="lang-js"><span class="token comment" spellcheck="true">// ./components/UserForm.js</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Control<span class="token punctuation">,</span> Form<span class="token punctuation">,</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">UserForm</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">handleSubmit</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> dispatch <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Do whatever you like in here.</span>
+    <span class="token comment" spellcheck="true">// You can use actions such as:</span>
+    <span class="token comment" spellcheck="true">// dispatch(actions.submit(&apos;user&apos;, somePromise));</span>
+    <span class="token comment" spellcheck="true">// etc.</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Form model<span class="token operator">=</span><span class="token string">&quot;user&quot;</span>
+        onSubmit<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleSubmit</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>First name<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text model<span class="token operator">=</span><span class="token string">&quot;user.firstName&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Last name<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text model<span class="token operator">=</span><span class="token string">&quot;user.lastName&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>button type<span class="token operator">=</span><span class="token string">&quot;submit&quot;</span><span class="token operator">&gt;</span>
+          Finish registration<span class="token operator">!</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Form<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> UserForm<span class="token punctuation">;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: Guides">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="models.html" class="navigation navigation-next " aria-label="Next page: Models">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Quick Start","level":"1.2.1","depth":2,"next":{"title":"Models","level":"1.2.2","depth":2,"path":"docs/guides/models.md","ref":"docs/guides/models.md","articles":[]},"previous":{"title":"Guides","level":"1.2","depth":1,"path":"docs/guides/README.md","ref":"docs/guides/README.md","articles":[{"title":"Quick Start","level":"1.2.1","depth":2,"path":"docs/guides/quickstart.md","ref":"docs/guides/quickstart.md","articles":[]},{"title":"Models","level":"1.2.2","depth":2,"path":"docs/guides/models.md","ref":"docs/guides/models.md","articles":[]},{"title":"Validation","level":"1.2.3","depth":2,"path":"docs/guides/validation.md","ref":"docs/guides/validation.md","articles":[]},{"title":"Tracking Collections","level":"1.2.4","depth":2,"path":"docs/guides/tracking.md","ref":"docs/guides/tracking.md","articles":[]},{"title":"Custom Controls","level":"1.2.5","depth":2,"path":"docs/guides/custom-controls.md","ref":"docs/guides/custom-controls.md","articles":[]},{"title":"Compare to Redux-Form","level":"1.2.6","depth":2,"path":"docs/guides/compare-redux-form.md","ref":"docs/guides/compare-redux-form.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/davidkpiano/react-redux-form"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Form","gitbook":"3.x.x"},"file":{"path":"docs/guides/quickstart.md","mtime":"2016-08-18T11:58:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T14:04:38.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

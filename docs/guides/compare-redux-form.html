@@ -1,0 +1,681 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Compare to Redux-Form · React Redux Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../api/README.md" />
+    
+    
+    <link rel="prev" href="custom-controls.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="models.html">
+            
+                <a href="models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="validation.html">
+            
+                <a href="validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="tracking.html">
+            
+                <a href="tracking.html">
+            
+                    
+                    Tracking Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="custom-controls.html">
+            
+                <a href="custom-controls.html">
+            
+                    
+                    Custom Controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="compare-redux-form.html">
+            
+                <a href="compare-redux-form.html">
+            
+                    
+                    Compare to Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../api/README.md">
+            
+                <span>
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../api/Control.html">
+            
+                <a href="../api/Control.html">
+            
+                    
+                    Control component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../api/Field.html">
+            
+                <a href="../api/Field.html">
+            
+                    
+                    Field component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../api/modelReducer.html">
+            
+                <a href="../api/modelReducer.html">
+            
+                    
+                    modelReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../api/formReducer.html">
+            
+                <a href="../api/formReducer.html">
+            
+                    
+                    formReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../api/combineForms.html">
+            
+                <a href="../api/combineForms.html">
+            
+                    
+                    combineForms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../api/actions.html">
+            
+                <a href="../api/actions.html">
+            
+                    
+                    action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../recipes/README.md">
+            
+                <span>
+            
+                    
+                    Recipes and Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../recipes/quickstart.html">
+            
+                <a href="../recipes/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Compare to Redux-Form</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="compare-to-redux-form">Compare to <a href="http://redux-form.com/" target="_blank">Redux-Form</a></h1><h3 id="simple-form-example">Simple Form Example</h3><p>Source: <a href="http://redux-form.com/6.0.2/examples/simple/" target="_blank">http://redux-form.com/6.0.2/examples/simple/</a></p><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Field
+  name<span class="token operator">=</span><span class="token string">&quot;firstName&quot;</span>
+  component<span class="token operator">=</span><span class="token string">&quot;input&quot;</span>
+  type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span>
+  placeholder<span class="token operator">=</span><span class="token string">&quot;First Name&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Field
+  name<span class="token operator">=</span><span class="token string">&quot;email&quot;</span>
+  component<span class="token operator">=</span><span class="token string">&quot;input&quot;</span>
+  type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span>
+  placeholder<span class="token operator">=</span><span class="token string">&quot;Email&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Field name<span class="token operator">=</span><span class="token string">&quot;notes&quot;</span> component<span class="token operator">=</span><span class="token string">&quot;textarea&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment" spellcheck="true">// ...</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">reduxForm</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  form<span class="token punctuation">:</span> <span class="token string">&apos;simple&apos;</span>  <span class="token comment" spellcheck="true">// a unique identifier for this form</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>SimpleForm<span class="token punctuation">)</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;simple.firstName&quot;</span>
+  placeholder<span class="token operator">=</span><span class="token string">&quot;First Name&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Control
+  model<span class="token operator">=</span><span class="token string">&quot;simple.email&quot;</span>
+  type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span>
+  placeholder<span class="token operator">=</span><span class="token string">&quot;Email&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>textarea model<span class="token operator">=</span><span class="token string">&quot;simple.notes&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<hr><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span><span class="token operator">&lt;</span>Field name<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span> component<span class="token operator">=</span><span class="token string">&quot;input&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;radio&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;male&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span> Male<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span><span class="token operator">&lt;</span>Field name<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span> component<span class="token operator">=</span><span class="token string">&quot;input&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;radio&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;female&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span> Female<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token string">&quot;simple.sex&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;radio&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;male&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span> Male<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;radio&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;female&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span> Female<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span></code></pre>
+<hr><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Field name<span class="token operator">=</span><span class="token string">&quot;favoriteColor&quot;</span> component<span class="token operator">=</span><span class="token string">&quot;select&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;ff0000&quot;</span><span class="token operator">&gt;</span>Red<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;00ff00&quot;</span><span class="token operator">&gt;</span>Green<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;0000ff&quot;</span><span class="token operator">&gt;</span>Blue<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>select model<span class="token operator">=</span><span class="token string">&quot;simple.favoriteColor&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;ff0000&quot;</span><span class="token operator">&gt;</span>Red<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;00ff00&quot;</span><span class="token operator">&gt;</span>Green<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&quot;0000ff&quot;</span><span class="token operator">&gt;</span>Blue<span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Control<span class="token operator">&gt;</span></code></pre>
+<hr><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Field name<span class="token operator">=</span><span class="token string">&quot;employed&quot;</span> id<span class="token operator">=</span><span class="token string">&quot;employed&quot;</span> component<span class="token operator">=</span><span class="token string">&quot;input&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>checkbox model<span class="token operator">=</span><span class="token string">&quot;simple.employed&quot;</span> id<span class="token operator">=</span><span class="token string">&quot;employed&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h3 id="sync-validation">Sync Validation</h3><p>Source: <a href="http://redux-form.com/6.0.2/examples/syncValidation/" target="_blank">http://redux-form.com/6.0.2/examples/syncValidation/</a></p><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field<span class="token punctuation">,</span> reduxForm <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span>
+
+<span class="token keyword">const</span> validate <span class="token operator">=</span> values <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> errors <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>values<span class="token punctuation">.</span>username<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    errors<span class="token punctuation">.</span>username <span class="token operator">=</span> <span class="token string">&apos;Required&apos;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> errors
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> renderField <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> input<span class="token punctuation">,</span> label<span class="token punctuation">,</span> type<span class="token punctuation">,</span> meta<span class="token punctuation">:</span> <span class="token punctuation">{</span> touched<span class="token punctuation">,</span> error <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span><span class="token punctuation">{</span>label<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>input<span class="token punctuation">}</span> placeholder<span class="token operator">=</span><span class="token punctuation">{</span>label<span class="token punctuation">}</span> type<span class="token operator">=</span><span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span>touched <span class="token operator">&amp;&amp;</span> error <span class="token operator">&amp;&amp;</span> <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>error<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> SyncValidationForm <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> handleSubmit<span class="token punctuation">,</span> pristine<span class="token punctuation">,</span> reset<span class="token punctuation">,</span> submitting <span class="token punctuation">}</span> <span class="token operator">=</span> props
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>form onSubmit<span class="token operator">=</span><span class="token punctuation">{</span>handleSubmit<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Field name<span class="token operator">=</span><span class="token string">&quot;username&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>renderField<span class="token punctuation">}</span> label<span class="token operator">=</span><span class="token string">&quot;Username&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">reduxForm</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  form<span class="token punctuation">:</span> <span class="token string">&apos;syncValidation&apos;</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// a unique identifier for this form</span>
+  validate                 <span class="token comment" spellcheck="true">// &lt;--- validation function given to redux-form</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>SyncValidationForm<span class="token punctuation">)</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Form<span class="token punctuation">,</span> Control<span class="token punctuation">,</span> Errors <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> required <span class="token operator">=</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span><span class="token operator">!</span><span class="token punctuation">(</span>val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> SyncValidationForm <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Form model<span class="token operator">=</span><span class="token string">&quot;syncValidation&quot;</span> onSubmit<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Username<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+        placeholder<span class="token operator">=</span><span class="token string">&quot;Username&quot;</span>
+        validators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> required <span class="token punctuation">}</span><span class="token punctuation">}</span>
+      <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Errors messages<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token string">&apos;Required&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>Form<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// no need to connect!</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> SyncValidationForm<span class="token punctuation">;</span></code></pre>
+<h3 id="initialize-from-state">Initialize From State</h3><p>Source: <a href="http://redux-form.com/6.0.2/examples/initializeFromState/" target="_blank">http://redux-form.com/6.0.2/examples/initializeFromState/</a></p><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// Too lengthy to display. See source above.</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// external data to load</span>
+<span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">/* ... */</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> InitializeFromStateForm <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> dispatch <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>form<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>button type<span class="token operator">=</span><span class="token string">&quot;button&quot;</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        Load Account
+      <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+      <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* ... */</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">(</span>InitializeFromStateForm<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="selecting-form-values">Selecting Form Values</h3><p>Source: <a href="http://redux-form.com/6.0.2/examples/selectingFormValues/" target="_blank">http://redux-form.com/6.0.2/examples/selectingFormValues/</a></p><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> formValueSelector <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> UserForm <span class="token operator">=</span> <span class="token comment" spellcheck="true">// ...</span>
+
+<span class="token comment" spellcheck="true">// ...</span>
+<span class="token keyword">const</span> selector <span class="token operator">=</span> <span class="token function">formValueSelector</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &lt;-- same as form name</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span>
+  state <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// can select values individually</span>
+    <span class="token keyword">const</span> hasEmailValue <span class="token operator">=</span> <span class="token function">selector</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token string">&apos;hasEmail&apos;</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> favoriteColorValue <span class="token operator">=</span> <span class="token function">selector</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token string">&apos;favoriteColor&apos;</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">// or together as a group</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> firstName<span class="token punctuation">,</span> lastName <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">selector</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token string">&apos;firstName&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;lastName&apos;</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      hasEmailValue<span class="token punctuation">,</span>
+      favoriteColorValue<span class="token punctuation">,</span>
+      fullName<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>firstName <span class="token operator">||</span> <span class="token string">&apos;&apos;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>lastName <span class="token operator">||</span> <span class="token string">&apos;&apos;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">(</span>UserForm<span class="token punctuation">)</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> UserForm <span class="token operator">=</span> <span class="token comment" spellcheck="true">// ...</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span> user <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  hasEmail<span class="token punctuation">:</span> user<span class="token punctuation">.</span>hasEmail<span class="token punctuation">,</span>
+  favoriteColorValue<span class="token punctuation">:</span> user<span class="token punctuation">.</span>favoriteColorValue<span class="token punctuation">,</span>
+  fullName<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>user<span class="token punctuation">.</span>firstName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>user<span class="token punctuation">.</span>lastName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span>UserForm<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="field-arrays">Field Arrays</h3><p>Source: <a href="http://redux-form.com/6.0.2/examples/fieldArrays/" target="_blank">http://redux-form.com/6.0.2/examples/fieldArrays/</a></p><p><strong>Redux-Form:</strong></p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// Too lengthy to display. See source above.</span></code></pre>
+<p><strong>React-Redux-Form:</strong></p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> initialMember <span class="token operator">=</span> <span class="token punctuation">{</span> firstName<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> lastName<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> initialHobby <span class="token operator">=</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ClubForm <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> club<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Form model<span class="token operator">=</span><span class="token string">&quot;club&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token string">&quot;club.name&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Club Name<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> required <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>button
+      type<span class="token operator">=</span><span class="token string">&quot;button&quot;</span>
+      onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&apos;club.members&apos;</span><span class="token punctuation">,</span> initialMember<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">/</span><span class="token operator">&gt;</span>
+      Add Member
+    <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+    <span class="token punctuation">{</span>club<span class="token punctuation">.</span>members<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>member<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div key<span class="token operator">=</span><span class="token punctuation">{</span>i<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>Member #<span class="token punctuation">{</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token string">`club.members[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">].firstName`</span></span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>First Name<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> required <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token string">`club.members[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">].lastName`</span></span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Last Name<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> required <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>button
+          type<span class="token operator">=</span><span class="token string">&quot;button&quot;</span>
+          onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`club.members[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">].hobbies`</span></span><span class="token punctuation">,</span> initialHobby<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+          Add Hobby
+        <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token punctuation">{</span>member<span class="token punctuation">.</span>hobbies<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>hobby<span class="token punctuation">,</span> j<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token string">`club.members[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">].hobbies[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>j<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">]`</span></span><span class="token punctuation">}</span> key<span class="token operator">=</span><span class="token punctuation">{</span>j<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span>Hobby #<span class="token punctuation">{</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> required <span class="token operator">/</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>Form<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span>club<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>club<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ClubForm<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="custom-controls.html" class="navigation navigation-prev " aria-label="Previous page: Custom Controls">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../api/README.md" class="navigation navigation-next " aria-label="Next page: API Reference">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Compare to Redux-Form","level":"1.2.6","depth":2,"next":{"title":"API Reference","level":"1.3","depth":1,"path":"docs/api/README.md","ref":"docs/api/README.md","articles":[{"title":"Control component","level":"1.3.1","depth":2,"path":"docs/api/Control.md","ref":"docs/api/Control.md","articles":[]},{"title":"Field component","level":"1.3.2","depth":2,"path":"docs/api/Field.md","ref":"docs/api/Field.md","articles":[]},{"title":"modelReducer","level":"1.3.3","depth":2,"path":"docs/api/modelReducer.md","ref":"docs/api/modelReducer.md","articles":[]},{"title":"formReducer","level":"1.3.4","depth":2,"path":"docs/api/formReducer.md","ref":"docs/api/formReducer.md","articles":[]},{"title":"combineForms","level":"1.3.5","depth":2,"path":"docs/api/combineForms.md","ref":"docs/api/combineForms.md","articles":[]},{"title":"action creators","level":"1.3.6","depth":2,"path":"docs/api/actions.md","ref":"docs/api/actions.md","articles":[]}]},"previous":{"title":"Custom Controls","level":"1.2.5","depth":2,"path":"docs/guides/custom-controls.md","ref":"docs/guides/custom-controls.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/davidkpiano/react-redux-form"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Form","gitbook":"3.x.x"},"file":{"path":"docs/guides/compare-redux-form.md","mtime":"2016-09-05T14:49:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T14:04:38.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

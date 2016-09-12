@@ -1,0 +1,672 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Validation · React Redux Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tracking.html" />
+    
+    
+    <link rel="prev" href="models.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="models.html">
+            
+                <a href="models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="validation.html">
+            
+                <a href="validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="tracking.html">
+            
+                <a href="tracking.html">
+            
+                    
+                    Tracking Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="custom-controls.html">
+            
+                <a href="custom-controls.html">
+            
+                    
+                    Custom Controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="compare-redux-form.html">
+            
+                <a href="compare-redux-form.html">
+            
+                    
+                    Compare to Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../api/README.md">
+            
+                <span>
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../api/Control.html">
+            
+                <a href="../api/Control.html">
+            
+                    
+                    Control component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../api/Field.html">
+            
+                <a href="../api/Field.html">
+            
+                    
+                    Field component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../api/modelReducer.html">
+            
+                <a href="../api/modelReducer.html">
+            
+                    
+                    modelReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../api/formReducer.html">
+            
+                <a href="../api/formReducer.html">
+            
+                    
+                    formReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../api/combineForms.html">
+            
+                <a href="../api/combineForms.html">
+            
+                    
+                    combineForms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../api/actions.html">
+            
+                <a href="../api/actions.html">
+            
+                    
+                    action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../recipes/README.md">
+            
+                <span>
+            
+                    
+                    Recipes and Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../recipes/quickstart.html">
+            
+                <a href="../recipes/quickstart.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Validation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="validation">Validation</h1><p>Validation occurs as the result of dispatching validation actions, such as <code>actions.setValidity(model, validity)</code> or <code>actions.setErrors(model, errors)</code>. That action updates the form validity and error state of your model, and allows you to:</p><ul><li>validate any part of the model state (however deep),
+</li>
+<li>validate any key on that model (such as <code>{ required: true, length: false }</code>)
+</li>
+<li>call validation only when the model has been updated.
+</li></ul>
+<h2 id="simple-validation">Simple Validation</h2><p>Suppose you are validating <code>&apos;user.email&apos;</code>. At any point, you can dispatch <code>actions.setValidity()</code> to set the validity of that model on your form state:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">emailIsValid</span><span class="token punctuation">(</span>email<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// terrible validation, I know</span>
+  <span class="token keyword">return</span> email <span class="token operator">&amp;&amp;</span> email<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// in the connected component&apos;s render() method...</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> dispatch<span class="token punctuation">,</span> user <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+<span class="token keyword">return</span>
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span>
+  onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+  onBlur<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> emailIsValid<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<h2 id="multiple-validation-keys">Multiple Validation Keys</h2><p>You can also get more specific with validation by returning an object with validation keys. The API is the same -- this time, we&apos;ll use the excellent <a href="https://www.npmjs.com/package/validator" target="_blank">validator</a> library to help us.</p><p><strong>Note:</strong> React Redux Form can work with any validator function library!</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> validator <span class="token keyword">from</span> <span class="token string">&apos;validator&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// wherever validation is occurring:</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  required<span class="token punctuation">:</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> value <span class="token operator">&amp;&amp;</span> value<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+  valid<span class="token punctuation">:</span> validator<span class="token punctuation">.</span>isEmail
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="updated-form-state">Updated Form State</h2><p>Here&apos;s what happens when you set the validity of a model, via <code>dispatch(actions.setValidity(model, validity))</code>:</p><ul><li><p>The <code>.errors</code> property of the model&apos;s field is set:</p><ul><li>if <code>validity</code> is boolean, <code>.errors = !validity</code>. If valid, <code>.errors = false</code>, and vice-versa
+</li>
+<li>if <code>validity</code> is an object, <code>.errors</code> is set to the opposite of each validation key (see example below)
+</li></ul>
+</li>
+<li><p>The <code>.validity</code> property of the model&apos;s field is set as the inverse of <code>.errors</code></p></li>
+<li><p>The <code>.valid</code> property of the model&apos;s field is set:</p><ul><li><code>.valid = true</code> if the validity is truthy or if each validation key value is truthy
+</li>
+<li><code>.valid = false</code> if the validity is falsey or if any validation key is falsey
+</li></ul>
+</li>
+<li><p>The <code>.valid</code> property of all parent forms of the model are set:</p><ul><li><code>.valid = true</code> if every field in the form is valid
+</li>
+<li><code>.valid = false</code> if any field in the form is invalid
+</li></ul>
+</li></ul>
+<p>Here&apos;s an example:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// wherever validation occurs...</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> userForm<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setValidity</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  isEmail<span class="token punctuation">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// user entered email but email is invalid</span>
+
+userForm<span class="token punctuation">.</span>email<span class="token punctuation">.</span>valid<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; false</span>
+
+userForm<span class="token punctuation">.</span>email<span class="token punctuation">.</span>errors<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; { required: false, isEmail: true }</span>
+
+userForm<span class="token punctuation">.</span>$form<span class="token punctuation">.</span>valid<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; false</span></code></pre>
+<h2 id="async-validity">Async Validity</h2><p>There are multiple ways you can handle setting validity asynchronously. As long as a validation action such as <code>setValidity()</code> or <code>setErrors()</code> is dispatched, the validity will be updated. It&apos;s generally a good idea to dispatch <code>setPending(model, pending)</code> to indicate that the model is currently being validated.</p><p>Here&apos;s a solution using an action thunk creator (with <code>redux-thunk</code>):</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// username-actions.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">checkAvailability</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>dispatch<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setPending</span><span class="token punctuation">(</span><span class="token string">&apos;user.username&apos;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// some asynchronous validation function that returns a promise</span>
+    <span class="token function">asyncCheckUsername</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+         <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setValidity</span><span class="token punctuation">(</span><span class="token string">&apos;user.username&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+           available<span class="token punctuation">:</span> response<span class="token punctuation">.</span>available
+         <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setPending</span><span class="token punctuation">(</span><span class="token string">&apos;user.username&apos;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Alternatively, the <code>asyncSetValidity(model, validator)</code> action thunk creator does the above by using the <code>done</code> callback as the second argument to <code>validator(value, done)</code>:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// wherever validation occurs...</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> user<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setAsyncValidity</span><span class="token punctuation">(</span><span class="token string">&apos;user.username&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>value<span class="token punctuation">,</span> done<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">asyncCheckUsername</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">{</span> available<span class="token punctuation">:</span> response<span class="token punctuation">.</span>available <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If you are working with <strong>promises</strong>, the <code>submit(model, promise)</code> action will automatically set the <code>.errors</code> of the <code>model</code> field if the promise is rejected:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// your custom promise</span>
+<span class="token keyword">import</span> checkUsernamePromise <span class="token keyword">from</span> <span class="token string">&apos;../path/to/promise&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// wherever dispatch() is available...</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token string">&apos;user&apos;</span><span class="token punctuation">,</span> checkUsernamePromise<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If the promise you are working with can reject with errors for each individual field, such as:</p><pre><code>{
+  &quot;email&quot;: [&quot;The email address is invalid.&quot;],
+  &quot;firstName&quot;: [&quot;Name contains illegal characters.&quot;]
+}</code></pre>
+<p>then you can use <code>actions.submitFields(&apos;user&apos;, myPromise)</code>, which will set errors for each individual field (e.g., <code>&quot;user.email&quot;</code>, <code>&quot;user.firstName&quot;</code>), instead of just the <code>&quot;user&quot;</code> model.</p><h2 id="validation-with-field-and-control-components">Validation with <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Field</span><span class="token punctuation">&gt;</span></span></code> and <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> components</h2><p>The <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Field</span><span class="token punctuation">&gt;</span></span></code> and <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> components accept a few validation-specific props:</p><ul><li><p><code>validators</code> - an object with key-value pairs:</p><ul><li><strong>validation key</strong> (string) and
+</li>
+<li><strong>validator</strong> (function) - a function that takes in the model <code>value</code> and returns a boolean (true/false if valid/invalid)
+</li></ul>
+</li>
+<li><p><code>asyncValidators</code> - an object with key-value pairs:</p><ul><li><strong>validation key</strong> (string) and
+</li>
+<li><strong>validator</strong> (function) - a function that takes in the model <code>value</code> and the <code>done</code> callback, similar to <code>asyncSetValidity(value, done)</code>
+</li></ul>
+</li>
+<li><p><code>validateOn</code> and <code>asyncValidateOn</code> - event to indicate when to validate:</p><ul><li><code>&quot;change&quot;</code> (default for <code>validators</code>)
+</li>
+<li><code>&quot;blur&quot;</code> (default for <code>asyncValidators</code>)
+</li>
+<li><code>&quot;focus&quot;</code>
+</li>
+<li>or multiple values, such as <code>[&quot;change&quot;, &quot;blur&quot;]</code>
+</li></ul>
+</li></ul>
+<p>Here&apos;s an example with the above email and username fields:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isEmail <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;../path/to/validators&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// in the component&apos;s render() method:</span>
+<span class="token operator">&lt;</span>Field
+  model<span class="token operator">=</span><span class="token string">&quot;user.email&quot;</span>
+  validators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    isEmail<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  validateOn<span class="token operator">=</span><span class="token string">&quot;blur&quot;</span>
+<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;user.firstName&quot;</span>
+  validators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  validateOn<span class="token operator">=</span><span class="token string">&quot;change&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token string">&quot;user.username&quot;</span>
+  validators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  asyncValidators<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    available<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">,</span> done<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">asyncCheckUsername</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">done</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>available<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  asyncValidateOn<span class="token operator">=</span><span class="token string">&quot;blur&quot;</span>
+<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span></code></pre>
+<h2 id="html5-validation">HTML5 Validation</h2><p><a href="http://www.html5rocks.com/en/tutorials/forms/constraintvalidation/" target="_blank">HTML Constraint Validation</a> is recognized in RRF, and RRF will detect if the control&apos;s DOM node <code>.willValidate</code>. If so, then whenever validation occurs on the control, RRF will set the corresponding validation fields automatically.</p><p>This means that validation such as the examples below will <em>just work</em>:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Field<span class="token punctuation">,</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// ...</span>
+
+<span class="token operator">&lt;</span>Field model<span class="token operator">=</span><span class="token string">&quot;user.email&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;user.firstName&quot;</span>
+  required
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+<p>If you want to disable HTML5 validation for a form, add a <code>novalidate</code> attribute to the form element:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Form <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// email input will not be validated</span>
+<span class="token operator">&lt;</span>Form model<span class="token operator">=</span><span class="token string">&quot;user&quot;</span> novalidate<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>email <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Form<span class="token operator">&gt;</span></code></pre>
+<h2 id="custom-error-messages">Custom Error Messages</h2><p>Similar to how the <code>validators</code> prop and <code>setValidity()</code> action works, you can use the <code>errors</code> prop and <code>setErrors()</code> action to indicate errors. Keep in mind, these should express the <em>inverse</em> validity state of the model. This means that anything <em>truthy</em> indicates an error.</p><p><strong>Disclaimer:</strong> I do <em>not</em> recommend hard-coding error messages in your validators. Messages are view concerns, and a simple boolean <code>true</code> or <code>false</code> is more than enough to indicate the validity of a model. When in doubt, use <code>validators</code> and/or <code>setValidity</code>.</p><p>Here&apos;s how the <code>setErrors()</code> action works:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> validator <span class="token keyword">from</span> <span class="token string">&apos;validator&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// wherever dispatch() is available:</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">setErrors</span><span class="token punctuation">(</span><span class="token string">&apos;user.email&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  invalid<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span>validator<span class="token punctuation">.</span><span class="token function">isEmail</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;Not a valid email&apos;</span><span class="token punctuation">,</span>
+  length<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> val <span class="token operator">&lt;</span> <span class="token number">8</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&apos;Email is too short&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If a form reducer exists for <code>&apos;user&apos;</code>, this will set various properties of the <code>userForm.fields.email</code> state:</p><pre><code class="lang-js"><span class="token comment" spellcheck="true">// Assuming a long but invalid email:</span>
+
+userForm<span class="token punctuation">.</span>email<span class="token punctuation">.</span>valid<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; false</span>
+
+userForm<span class="token punctuation">.</span>email<span class="token punctuation">.</span>errors<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; { invalid: &apos;Not a valid email&apos;, length: false }</span>
+
+userForm<span class="token punctuation">.</span>email<span class="token punctuation">.</span>validity<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// =&gt; { invalid: false, length: true }</span></code></pre>
+<p>Error validators can be defined in the <code>errors</code> prop of the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Form</span><span class="token punctuation">&gt;</span></span></code>, <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Field</span><span class="token punctuation">&gt;</span></span></code>, and <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Control</span><span class="token punctuation">&gt;</span></span></code> components, as well:</p><pre><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Control <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-form&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isEmail <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;../path/to/validators&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// in the component&apos;s render() method:</span>
+<span class="token operator">&lt;</span>Field
+  model<span class="token operator">=</span><span class="token string">&quot;user.email&quot;</span>
+  errors<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span>val <span class="token operator">||</span> <span class="token operator">!</span>val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    isEmail<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span><span class="token function">isEmail</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  validateOn<span class="token operator">=</span><span class="token string">&quot;blur&quot;</span>
+<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;email&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Field<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>Control<span class="token punctuation">.</span>text
+  model<span class="token operator">=</span><span class="token string">&quot;user.firstName&quot;</span>
+  errors<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">!</span>val <span class="token operator">||</span> <span class="token operator">!</span>val<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  validateOn<span class="token operator">=</span><span class="token string">&quot;change&quot;</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="models.html" class="navigation navigation-prev " aria-label="Previous page: Models">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tracking.html" class="navigation navigation-next " aria-label="Next page: Tracking Collections">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Validation","level":"1.2.3","depth":2,"next":{"title":"Tracking Collections","level":"1.2.4","depth":2,"path":"docs/guides/tracking.md","ref":"docs/guides/tracking.md","articles":[]},"previous":{"title":"Models","level":"1.2.2","depth":2,"path":"docs/guides/models.md","ref":"docs/guides/models.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/davidkpiano/react-redux-form"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Form","gitbook":"3.x.x"},"file":{"path":"docs/guides/validation.md","mtime":"2016-09-05T14:49:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T14:04:38.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
